@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(165, 167, 141);
+}
+img{
+    border-style: solid;
+}
+.Carousel_container{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.Carrousel{
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+.Carrousel input {
+    display: none;
+}
+.Carrousel-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 280px; 
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid rgb(190, 32, 32);
+    border-style: double;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 5%;
+}
+.nav-manual .manual-btn:hover{
+    background-color: red;
+}
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: red;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: red;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: red;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
